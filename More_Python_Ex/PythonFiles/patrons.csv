@@ -1,0 +1,16 @@
+FirstName,LastName,Email,Pledge,Lifetime,Status,Country,Start
+1 + Reward,	Description I will add your name to the contributors page on my website. You will also be eligible for Patreon-only rewards. I will occasionally give away books that I have read, and will choose a Patron at random to receive those.						
+John,Doe,johndoe@bogusemail.com,10.00,20.00,Ok,2017-05-06,21:28:06.183108
+Dave,Smith,davesmith@bogusemail.com,5.00,10.00,Ok,2017-05-29,16:13:58.318920
+Mary,Jacobs,maryjacobs@bogusemail.com,5.00,10.00,Ok,2017-05-14,07:37:01.074648
+Jane,Stuart,janestuart@bogusemail.com,5.00,25.00,Ok,2016-12-30,18:12:13
+Tom,Jefferson,tomjefferson@bogusemail.com,1.00,10.00,Ok,2016-09-27,09:56:48
+Jane,Stuart,janestuart@bogusemail.com,1.00,7.00,2016-08-09,14:42:25
+Maggie,Jefferson,maggiejefferson@bogusemail.com,1.00,12.00,Ok,2016-07-26,05:02:16
+No Reward,Description: (None for No Reward)						
+Mary,Wilks,marywilks@bogusemail.com	20.00,60.00,Ok,2017-04-21,02:44:43.395224
+Neil,Patterson,neilpatterson@bogusemail.com,10.00,80.00,Ok,2016-11-12,17:49:37
+Corey,Davis,coreydavis@bogusemail.com,6.00,90.00,Ok,2016-04-01,15:19:52
+Steve,Jacobs,stevejacobs@bogusemail.com,5.00,21.00,Ok,2017-01-04,19:38:44
+Jane,Jenkins,janejenkins@bogusemail.com,5.00,30.00,Ok,2017-01-15,17:24:39
+John,Jacobs,johnjacobs@bogusemail.com,3.14,34.54,Ok,2016-08-23,16:09:25
