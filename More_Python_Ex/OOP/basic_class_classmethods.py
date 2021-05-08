@@ -1,7 +1,7 @@
 class Employee:
     amount_raise = 1.04
 
-
+    # Regular methods takes instance as first argument
     def __init__(self, first_name, last_name,pay):
         self.first_name = first_name
         self.last_name = last_name
@@ -16,6 +16,7 @@ class Employee:
         self.pay = int(self.pay * self.amount_raise)
         # self.pay = int(self.pay * Employee.amount_raise)
 
+    # class methods takes class as first argument
     @classmethod
     def set_raise_amount(cls, amount):
         cls.amount_raise = amount
@@ -24,6 +25,7 @@ class Employee:
     def from_string(cls, emp_string):
          first, last, sal = emp_string.split('-')
          return cls(first, last, sal)
+
 
 
 emp_1 = Employee('Manisha', 'Sinha', 60000)
