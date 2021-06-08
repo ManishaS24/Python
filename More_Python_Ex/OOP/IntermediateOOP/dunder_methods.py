@@ -19,5 +19,17 @@ class Employee:
     def __repr__(self): 
         return "Employee('{}', '{}', '{}')".format(self.first_name, self.last_name, self.pay)
 
+    def __str__(self): 
+        return "'{}'-'{}'".format(self.fullname(), self.email)
+
+
 emp_1 = Employee('Amit', 'Mishra', 76000)
-print(emp_1)
+
+# print(emp_1)
+# print(str(emp_1))
+
+# print(repr(emp_1))
+# print(str(emp_1))
+
+print(emp_1.__repr__())
+print(emp_1.__str__())
