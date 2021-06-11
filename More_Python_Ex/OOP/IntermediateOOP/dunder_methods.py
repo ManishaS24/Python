@@ -24,6 +24,9 @@ class Employee:
 
     def __add__(self, other):
         return self.pay + other.pay
+        
+    def __len__(self):
+        return len(self.fullname())
 
 
 emp_1 = Employee('Amit', 'Mishra', 76000)
@@ -39,3 +42,8 @@ print(emp_1.__repr__())
 print(emp_1.__str__())
 
 print(emp_1 + emp_2)
+
+# print(len('test'))
+# print('test'.__len__())
+
+print(len(emp_1))
