@@ -22,8 +22,12 @@ class Employee:
     def __str__(self): 
         return "'{}'-'{}'".format(self.fullname(), self.email)
 
+    def __add__(self, other):
+        return self.pay + other.pay
+
 
 emp_1 = Employee('Amit', 'Mishra', 76000)
+emp_2 = Employee('Sumit', 'Mehra', 50000)
 
 # print(emp_1)
 # print(str(emp_1))
@@ -33,3 +37,5 @@ emp_1 = Employee('Amit', 'Mishra', 76000)
 
 print(emp_1.__repr__())
 print(emp_1.__str__())
+
+print(emp_1 + emp_2)
