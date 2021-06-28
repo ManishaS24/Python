@@ -1,5 +1,6 @@
 import os
 import random
+from math import *
 
 def getUserPoints(user_name):
     contents = []
@@ -39,6 +40,44 @@ def updateUserPoints(new_user, user_name, score):
                 nf.write(line)
         nf.close()
         f.close()
+
+operandList = [0, 0, 0, 0, 0]
+operatorList = [' ', ' ', ' ', ' ', ' ']
+operatorDict = {1: '+',
+2: '-',
+3: '*',
+4: '**'
+}
+
+# operandList[0] = random.randint(1,9)
+# operandList[1] = random.randint(1, 9)
+# operandList[2] = random.randint(1, 9)
+# operandList[3] = random.randint(1, 9)
+# operandList[4] = random.randint(1, 9)
+
+for i in range(len(operandList)):
+    operandList[i] = random.randint(1, 9)
+
+for i in range(len(operatorList)):
+    operator = operatorDict[random.randint(1, 4)]
+    if operator == '**' and operator in operatorList:
+        continue
+    else:
+        operatorList[i] = operatorDict[random.randint(1, 4)]
+
+# # generating mathematical expression
+questionString = ''
+for i in range(len(operandList)):
+    questionString = operandList[i] + operatorList[i]
+
+result = eval(questionString)
+
+questionString = questionString.replace('**', '^')
+
+user_input = int(input("Type in your answer: "))
+
+
+
 
 # print(getUserPoints("Ann"))
 
