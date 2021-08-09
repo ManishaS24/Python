@@ -1,6 +1,7 @@
 import os
 import random
-from math import *
+#from math import *
+import math
 
 def getUserPoints(user_name):
     contents = []
@@ -42,7 +43,7 @@ def updateUserPoints(new_user, user_name, score):
         f.close()
 
 operandList = [0, 0, 0, 0, 0]
-operatorList = [' ', ' ', ' ', ' ', ' ']
+operatorList = [' ', ' ', ' ', ' ']
 operatorDict = {1: '+',
 2: '-',
 3: '*',
@@ -57,27 +58,45 @@ operatorDict = {1: '+',
 
 for i in range(len(operandList)):
     operandList[i] = random.randint(1, 9)
+# print(operandList)
 
 for i in range(len(operatorList)):
     operator = operatorDict[random.randint(1, 4)]
     if operator == '**' and operator in operatorList:
         continue
+        # break
     else:
         operatorList[i] = operatorDict[random.randint(1, 4)]
+print(operatorList)
+
 
 # # generating mathematical expression
-questionString = ''
-for i in range(len(operandList)):
-    questionString = operandList[i] + operatorList[i]
+questionString = " "
+for i in range(len(operandList)-1):
+    questionString = questionString + str(operandList[i]) + operatorList[i]
+print(questionString)
+
+questionString = questionString + str(operandList[-1])
+
+print(questionString)
+
 
 result = eval(questionString)
+print(result)
+# # Interacting with the User
 
 questionString = questionString.replace('**', '^')
+print("Here is your question: ", questionString)
+
 
 user_input = int(input("Type in your answer: "))
 
+# print(user_input)
+if user_input == result:
+    print("You get it right..Congrats!!")
 
-
+else:
+    print("The answer is: ", result + " try another time:(")
 
 # print(getUserPoints("Ann"))
 
